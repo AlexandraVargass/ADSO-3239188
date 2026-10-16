@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema MVC - Reserva de Citas</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>Agenda de Citas (MVC)</h1>
+    <nav>
+      <button id="btn-view-clients" class="btn-nav active">1. Clientes</button>
+      <button id="btn-view-reservations" class="btn-nav">2. Reservas</button>
+    </nav>
+  </header>
+
+  <!-- Aquí AJAX cargará dinámicamente client.html o reservation.html -->
+  <main id="app-container" class="container">
+    <p>Cargando vista...</p>
+  </main>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>

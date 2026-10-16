@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #e591c9;
+  color: #100f0f;
+}
+
+.navbar {
+  background-color: #ea72cc;
+  color: #0a0a0b;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-nav {
+  background: #e485b8;
+  color: #0d0c0c;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.btn-nav.active, .btn-nav:hover {
+  background: #df1b90;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Diseño Escritorio (2 columnas) */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 1.5rem;
+}
+
+/* Diseño Layout Móvil (1 columna en celulares) */
+@media (max-width: 820px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: #e673b1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px #3912d714;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  border-bottom: 2px solid #7d05d3;
+  padding-bottom: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 0.9rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.55rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  width: 100%;
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #15803d;
+}
+
+.btn-delete {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 0.35rem 0.65rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.65rem;
+  border-bottom: 1px solid #2f82ef;
+}
+
+th {
+  background-color: #f8fafc;
+}
+
+.msg {
+  font-size: 0.88rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
